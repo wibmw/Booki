@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px)
+{
+.topnav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  /*float: left;*/
+  border-top: 0px;
+  color: #222121;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding:80px 30px 10px 30px;
+  line-height:80px;
+  border-bottom: 2px solid rgb(201, 201, 201);
+  width: fit-content;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a:active, a:hover {
+  border-top: 0px;
+  color: rgb(0, 136, 248);
+  border-bottom: 2px solid rgb(0, 136, 248);
+  
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    margin-right: auto; 
+}
+
+#logo {
+	width:100px;
+    height:45px;
+    margin: auto;
+}
+}
