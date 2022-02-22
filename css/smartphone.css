@@ -21,7 +21,7 @@
   font-weight: bold;
   padding:80px 30px 10px 30px;
   line-height:80px;
-  border-bottom: 2px solid rgb(201, 201, 201);
+  border-bottom: 2px solid #F2F2F2;
   width: fit-content;
 }
 
@@ -29,8 +29,8 @@
 /* Add a color to the active/current link */
 .topnav a:active, a:hover {
   border-top: 0px;
-  color: rgb(0, 136, 248);
-  border-bottom: 2px solid rgb(0, 136, 248);
+  color: #0065FC;
+  border-bottom: 2px solid #0065FC;
   
 }
 
@@ -44,4 +44,20 @@
     height:45px;
     margin: auto;
 }
+
+.searchButton {
+  display: none;
+}
+
+.searchIcon {
+  display: inline-block;
+}
+
+.filterForm {
+  flex-direction:column;
+  flex-flow: column wrap;
+  flex-grow: 0;
+}
+
+
 }

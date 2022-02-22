@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:  992px)" href="css/tablette.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/smartphone.css" />
     
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" media="screen and (max-width:  992px)" href="css/tablette.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/smartphone.css" />
-    <link rel="stylesheet" href="css/normalize.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/> 
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/> 
     <link rel="icon" href="images/logo/Booki.png" />
-
+    
     <title>Booki Project</title>
   
 </head>
@@ -23,18 +23,45 @@
     <nav class="topnav" >
         <img id="logo"  src="images/logo/Booki.png" alt="Booki">
         <div class="topnav-right">
-            <a class="" href="#hebergement">Hébergements</a>
-            <a href="#activite">Activités</a>
+            <a class="" href="#">Hébergements</a>
+            <a href="#">Activités</a>
         </div>
     </nav>
-<!-- *****HEADER***** -->
-    <header>
-
-    </header>
 <!-- *****RECHERCHES ET FILTRES***** -->
-    <section>
+    <header class="boxing">
+        <div class="title">Trouvez votre hébergement pour des vacances de rêve</div>
+        <div class="maintext">En plein centre ville ou en pleine nature</div>
+        <form action="" class="searchForm">
+            <i class="fas fa-map-marker-alt  mapMarker"></i>
+            <input type="search" class="searchInput" placeholder="Marseille, France"  />
+            <i class="searchButton" >Rechercher</i>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="searchIcon">
+                <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
+            </svg>
+            
+        </form>
+        
+        <form class="filterForm">
+            <div class="filterText"> Filtres</div>
+            <fieldset>
+                <i class="fas fa-money-bill-wave filterIcon" ></i>
+                <div  class="filterButton" >Economique</div>
+            </fieldset>
+            <fieldset>
+                <i class="fas fa-fw fa-2x1 fa-child filterIcon" ></i>
+                <div  class="filterButton" >Familial</div>
+            </fieldset>
+            <fieldset>
+                <i class="fas fa-fw fa-2x1 fa-heart filterIcon" ></i>
+                <div  class="filterButton" >Romantique</div>
+            </fieldset>
+            <fieldset>
+                <i class="fas fa-fw fa-2x1 fa-dog filterIcon" ></i>
+                <div  class="filterButton" >Animaux autorisés</div>
+             </fieldset>
+        </form>
+    </header>
 
-    </section>
 <!-- *****HEBERGEMENTS***** -->
     <section id="hebergement">
 
