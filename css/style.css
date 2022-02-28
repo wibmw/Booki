@@ -19,6 +19,7 @@ form input {
  /* box-sizing: border-box;*/
 }
 
+/******************* MENU ************************/
 .topnav {
     /* position: relative; */
     display: -webkit-box;
@@ -64,6 +65,7 @@ form input {
     padding:30px 30px 0px 50px;
 }
 
+/******************* RECHERCHE ************************/
 .title {
   font-size: 20px;
   font-weight: bolder;
@@ -133,6 +135,7 @@ form input {
   display: none;
 }
 
+/******************* FILTRE ************************/
 .filterForm {
   margin-top: 30px;
   display: -webkit-box;
@@ -201,6 +204,8 @@ fieldset {
   border-color:#D9D9D9;
 }
 
+/******************* HEBERGEMENT ************************/
+
 #hebergement {
    margin: 0px 40px 0px 40px;
    -ms-box-orient: horizontal;
@@ -246,10 +251,10 @@ fieldset {
 .popCard, .heberCard, .activiteCard{
   border-radius: 20px;
   background-color: white;
-  font-size: 14px;
-  line-height: 25px;
+  /* font-size: 14px; */
+  /* line-height: 25px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-decoration: none;
+  /* text-decoration: none; */
   color:black;
 }
 
@@ -291,6 +296,7 @@ fieldset {
   order: 2;
   box-sizing: border-box;
   padding-left: 15px;
+  
 }
 
 .cardTitle2 {
@@ -325,6 +331,7 @@ fieldset {
   max-height: 580px;
 }
 
+/******************* ACTIVITE ************************/
 #activite {
   margin: 40px;
   display: -ms-flexbox;
@@ -335,39 +342,105 @@ fieldset {
 }
 
 .activiteCards {
-  width: auto;
+  width: fit-content;
   background-color: white;;
 }
 
 .acti {
-  max-width: 1400px;
-  -ms-box-orient: horizontal;
+  /*max-width: 1400px;
+ /* -ms-box-orient: horizontal;
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   flex-shrink: 3;
-  gap: 30px;
+  gap: 30px;*/
+  
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 580px;
+
 }
 
 .activiteCard {
-  width: auto;
+  /*width: auto;
   height: auto;
   -ms-box-orient: horizontal;
-  display:inline-flexbox;
+  display:inline-flexbox;*/
+   width: 55%;
+  margin: 0 40px 40px 0;
+  text-decoration: none;
 }
 
+/* Force new columns */
+.acti::before,
+.acti::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+/* Re-order items into rows 
+.activiteCard:nth-child(4n+1) { order: 1; }
+.activiteCard:nth-child(4n+2) { order: 2; }
+.activiteCard:nth-child(4n+3) { order: 3; }
+.activiteCard:nth-child(4n)   { order: 4; }
+*/
+
 .imgCardActi3 {
-  width: 300px;
-  height: 39 0px;
+  width: 100%;
+  height: calc(100% - 40px);
   object-fit: cover;
   border-radius: 20px 20px 0 0;
- 
 }
 
 .cardDescActi {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 0px 0px 20px;
+}
 
+.bigCard {
+  height: 445px;
+}
+
+.mediumCard {
+  height: 240px;
+}
+
+.smallCard {
+  height: 165px;
+}
+
+/******************* FOOTER ************************/
+
+footer {
+
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: column wrap;
+  align-content:space-between;
+  padding: 40px;
+}
+
+.footerList {
+  width: auto;
+  margin: 0 40px 40px 0;
+  text-decoration: none;
+}
+
+
+footer ul li {
+  list-style: none;
+  display: block;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
 }
