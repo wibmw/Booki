@@ -32,7 +32,7 @@ form input {
     /* align-content:space-around; */
 }
 /* Style the links inside the navigation bar */
-.topnav a {
+.atopnav {
   /*float: left;*/
   color: #222121;
   text-decoration: none;
@@ -44,7 +44,7 @@ form input {
 
 
 /* Add a color to the active/current link */
-.topnav a:active, a:hover {
+.atopnav:active, .atopnav:hover {
   color: #0065FC;
   border-top: 3px solid #0065FC;
 
@@ -187,4 +187,187 @@ fieldset {
   margin-bottom: 10px;
   border: 0px;
   display: inline-block;
+}
+
+.filterInfo {
+  color:#0065FC;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 9px 6px 9px;
+  margin-right: 10px;
+  border-radius: 50% / 50%;
+  border-width: 1px;  
+  border-style:solid ;
+  border-color:#D9D9D9;
+}
+
+#hebergement {
+   margin: 0px 40px 0px 40px;
+   -ms-box-orient: horizontal;
+   display: -ms-flexbox;
+   display: -moz-flex;
+   display: -webkit-flex;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+}
+
+.cards, .popCards, .activiteCards {
+
+  margin-right: 40px;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  padding: 40px 40px 40px 40px;
+}
+
+.heber {
+  flex: 2 100%;
+  max-width: 790px;
+  -ms-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-shrink: 3;
+  gap: 30px;
+}
+
+.popAside {
+  flex: 1 100%;
+  max-width: 340px;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  gap: 30px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.popCard, .heberCard, .activiteCard{
+  border-radius: 20px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  color:black;
+}
+
+.popCard {
+  width: 340px;
+  height: 150px;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: row wrap;
+  flex-wrap: row wrap;
+
+}
+
+.heberCard {
+  width: 240px;
+  -ms-box-orient: horizontal;
+  display:inline-flexbox;
+}
+
+.imgCardPop {
+  order: 1;
+  width: 125px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+.imgCard {
+  width: 230px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  padding: 5px 5px 5px 5px;
+}
+
+.cardDesc {
+  order: 2;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.cardTitle2 {
+  padding-top: 10px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight:bolder;
+  text-decoration: none;
+}
+
+
+.unchecked {
+  color: #F2F2F2;
+  font-size: 11px;
+}
+.checked {
+  color: #0065FC;
+  font-size: 11px;
+}
+
+.chartIcon {
+  position: absolute;
+  width: auto; height: 17px; 
+  fill: black;
+  margin-left:140px;
+  display: inline-block;
+}
+
+.popCards {
+  max-height: 580px;
+}
+
+#activite {
+  margin: 40px;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:wrap;
+}
+
+.activiteCards {
+  width: auto;
+  background-color: white;;
+}
+
+.acti {
+  max-width: 1400px;
+  -ms-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-shrink: 3;
+  gap: 30px;
+}
+
+.activiteCard {
+  width: auto;
+  height: auto;
+  -ms-box-orient: horizontal;
+  display:inline-flexbox;
+}
+
+.imgCardActi3 {
+  width: 300px;
+  height: 39 0px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+ 
+}
+
+.cardDescActi {
+  box-sizing: border-box;
+  padding: 10px;
+
 }

@@ -59,5 +59,29 @@
   flex-grow: 0;
 }
 
+#hebergement {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: auto;
+}
+
+.cards {
+  order: 2;
+  background-color: white;
+}
+
+.popCards {
+  order:1;
+  border-radius: 0px;
+}
+
+.heberCard {
+  width: 340px;
+}
+
+.imgCard {
+  width: 330px;
+}
 
 }
