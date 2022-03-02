@@ -1,9 +1,6 @@
 @media screen and (max-width: 768px)
 {
 
-body {
-    max-width: auto;
-}
 
 /******************* MENU ************************/
 .top-nav {
@@ -50,7 +47,7 @@ body {
 }
 
 .search-icon {
-  display: inline-block;
+  display: block;
 }
 
 /******************* FILTRES ************************/
@@ -58,6 +55,7 @@ body {
   flex-direction:column;
   flex-flow: column wrap;
   flex-grow: 0;
+  display: block;
 }
 
 /******************* HEBERGEMENT ************************/

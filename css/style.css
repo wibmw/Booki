@@ -71,7 +71,7 @@ form i {
   border-right: 0px;
   border-style:solid ;
   border-color:#F2F2F2;
-  border: 1px 1px 1px 0px;
+  border: 1px 1px 1px;
   line-height:47px;
   padding-left: 10px;
   padding-right: 45px;
@@ -236,13 +236,12 @@ fieldset {
   width: 340px;
   height: 150px;
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
 }
 
 .heber-card {
   width: 240px;
-  -ms-box-orient: horizontal;
-  display:inline-flexbox;
+
 }
 
 .img-card-pop {
@@ -321,8 +320,6 @@ fieldset {
 }
 
 .title-activite {
-  font-size: 20px;
-  font-weight: bolder;
   padding: 40px 0px 0px 40px;
   margin-bottom: -20px;
 }
