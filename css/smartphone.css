@@ -1,6 +1,12 @@
 @media screen and (max-width: 768px)
 {
-.topnav {
+
+body {
+    max-width: auto;
+}
+
+/******************* MENU ************************/
+.top-nav {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -9,32 +15,25 @@
     align-items: center;
     flex-flow: row wrap;
     justify-content: flex-end;
-
+    width: auto;
 }
-/* Style the links inside the navigation bar */
-.topnav a {
-  /*float: left;*/
-  border-top: 0px;
+
+.a-top-nav {
   color: #222121;
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
-  padding:80px 30px 10px 30px;
   line-height:80px;
   border-bottom: 2px solid #F2F2F2;
-  width: fit-content;
+  width: auto;
 }
 
-
-/* Add a color to the active/current link */
-.topnav a:active, a:hover {
-  border-top: 0px;
+.a-top-nav:active, .a-top-nav:hover {
   color: #0065FC;
   border-bottom: 2px solid #0065FC;
-  
+  border-top: 0px;
 }
 
-/* Right-aligned section inside the top navigation */
 .topnav-right {
     margin-right: auto; 
 }
@@ -45,20 +44,23 @@
     margin: auto;
 }
 
-.searchButton {
+/******************* RECHERCHES  ************************/
+.search-button {
   display: none;
 }
 
-.searchIcon {
+.search-icon {
   display: inline-block;
 }
 
-.filterForm {
+/******************* FILTRES ************************/
+.filter-form {
   flex-direction:column;
   flex-flow: column wrap;
   flex-grow: 0;
 }
 
+/******************* HEBERGEMENT ************************/
 #hebergement {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -71,17 +73,36 @@
   background-color: white;
 }
 
-.popCards {
+.pop-cards {
   order:1;
   border-radius: 0px;
 }
 
-.heberCard {
+.heber-card {
   width: 340px;
 }
 
-.imgCard {
+.img-card {
   width: 330px;
+}
+
+/******************* ACTIVITE ************************/
+#activite {
+  margin: 0px;
+}
+
+.acti-block {
+  flex-flow: wrap;
+  align-content:flex-start;
+  height: auto;
+}
+
+.activite-card {
+  width: 340px;
+}
+
+.big-card, .medium-card, .small-card {
+  height: 150px;
 }
 
 }

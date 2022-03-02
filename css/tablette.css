@@ -1,4 +1,10 @@
 @media screen and (max-width:  992px)
 {
-
+    .activite-cards {
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
 }
