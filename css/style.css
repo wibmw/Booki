@@ -63,6 +63,7 @@ form i {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flex;
   flex-wrap: nowrap;
 }
 
@@ -100,10 +101,12 @@ form i {
   padding: 14px 20px 15px 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  min-width: 30px;
 }
 
 .search-icon {
-  width: auto; height: 17px; 
+  width: auto;
+  height: 17px;
   fill: white;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -118,6 +121,7 @@ form i {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flex;
   color: black;
   font-size: 18px;
   font-weight:bolder;
@@ -163,10 +167,12 @@ form i {
 }
 
 fieldset {
+  display: flex;
+  flex-wrap: nowrap;
   padding: 0px;
   margin-bottom: 10px;
   border: 0px;
-  display: inline-block;
+  
 }
 
 .filter-info {

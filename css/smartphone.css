@@ -1,6 +1,3 @@
-@media screen and (max-width: 768px)
-{
-
 
 /******************* MENU ************************/
 .top-nav {
@@ -48,6 +45,7 @@
 
 .search-icon {
   display: block;
+  width: 30px;
 }
 
 /******************* FILTRES ************************/
@@ -101,6 +99,4 @@
 
 .big-card, .medium-card, .small-card {
   height: 150px;
-}
-
 }
