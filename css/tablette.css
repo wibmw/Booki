@@ -1,8 +1,15 @@
+/******************* HEBERGEMENT ************************/
+#hebergement {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: auto;
+}
+ 
+/******************* ACTIVITE ************************/
+ .activite-cards {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
-    .activite-cards {
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-      }
+

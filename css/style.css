@@ -4,22 +4,31 @@ body {
     max-width: 1450px;
 }
 
-form i {
-  font-style: normal;
-}
-
 .boxing {
   padding: 10px 40px 20px 40px;
 }
 
-/******************* MENU ************************/
-.top-nav {
+/******************* Global Flex ************************/
+
+.flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flex;
 }
 
-/* Style the links inside the navigation bar */
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/******************* MENU ************************/
+
 .a-top-nav{
   color: #222121;
   text-decoration: none;
@@ -29,16 +38,14 @@ form i {
   line-height:120px;
 }
 
-/* Add a color to the active/current link */
-.a-top-nav:active, .a-top-nav:hover {
+.a-top-nav:active, .a-top-nav:hover, .active {
   color: #0065FC;
   border-top: 3px solid #0065FC;
 }
 
-/* Right-aligned section inside the top navigation */
 .topnav-right {
     margin-left: auto; 
-    display: flex;
+
 }
 
 #logo {
@@ -48,6 +55,7 @@ form i {
 }
 
 /******************* RECHERCHES  ************************/
+
 .title {
   font-size: 20px;
   font-weight: bolder;
@@ -60,11 +68,6 @@ form i {
 
 .search-form {
   margin: 10px 0px 10px 0px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .search-input {
@@ -116,16 +119,12 @@ form i {
 }
 
 /******************* FILTRES ************************/
+
 .filter-form {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
   color: black;
   font-size: 18px;
   font-weight:bolder;
-
 }
 
 .filter-text {
@@ -134,8 +133,15 @@ form i {
   margin-bottom: 20px;
 }
 
+.filter-form fieldset {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px;
+  margin-bottom: 10px;
+  border: 0px;
+}
 
-.filter-icon {
+.filter-form fieldset i {
   position: relative;
   background-color: #DEEBFF;
   color:#0065FC;
@@ -145,7 +151,7 @@ form i {
   z-index: 2000;
 }
 
-.filter-button {
+.filter-form fieldset div {
   margin-left: -20px;
   z-index: 1000;
   color: black;
@@ -161,18 +167,9 @@ form i {
   display: inline-block;
 }
 
-.filter-button:hover {
+.filter-form fieldset div:hover {
   color: #0065FC;
   background-color: #DEEBFF;
-}
-
-fieldset {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0px;
-  margin-bottom: 10px;
-  border: 0px;
-  
 }
 
 .filter-info {
@@ -189,48 +186,14 @@ fieldset {
 
 /******************* HEBERGEMENT ************************/
 
-#hebergement {
-   margin: 0px 40px 0px 40px;
-   -ms-box-orient: horizontal;
-   display: -ms-flexbox;
-   display: -moz-flex;
-   display: -webkit-flex;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-}
-
-.cards, .pop-cards, .activite-cards {
-
+.cards-template {
   margin-right: 40px;
   border-radius: 20px;
   background-color: #F2F2F2;
-  padding: 40px 40px 40px 40px;
+  padding: 40px;
 }
 
-.heber {
-  flex: 2 100%;
-  max-width: 790px;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  flex-shrink: 3;
-  gap: 30px;
-}
-
-.pop-side {
-  flex: 1 100%;
-  max-width: 340px;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  gap: 30px;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.pop-card, .heber-card, .activite-card{
+.card-template {
   border-radius: 20px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -238,57 +201,69 @@ fieldset {
   color:black;
 }
 
-.pop-card {
-  width: 340px;
-  height: 150px;
-  display: flex;
-  flex-wrap: wrap;
+.heber {
+  flex: 2 100%;
+  max-width: 790px;
+  flex-shrink: 3;
+  gap: 30px;
+}
+
+.pop-side {
+  flex: 1 100%;
+  max-width: 340px;
+  gap: 30px;
 }
 
 .heber-card {
   width: 240px;
-
 }
 
-.img-card-pop {
+.heber-card img {
+  width: 230px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  padding: 5px;
+}
+
+.pop-cards {
+  max-height: 580px;
+}
+
+.pop-card {
+  width: 340px;
+  height: 150px;
+}
+.pop-card img {
   order: 1;
   width: 125px;
   height: 140px;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
 }
 
-.img-card {
-  width: 230px;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-  padding: 5px 5px 5px 5px;
-}
 
-.card-desc, .card-desc2 {
+.card-desc, .pop-card-desc {
   order: 2;
   box-sizing: border-box;
   padding-left: 15px;
 
 }
 
-.card-desc2 {
-  display: flex;
+.pop-card-desc {
   flex-direction: column;
   flex: 1;
-}
-
-.card-title2 {
-  padding-top: 10px;
-  
 }
 
 .card-title {
   font-size: 16px;
   font-weight:bolder;
   text-decoration: none;
+}
+
+.pad-t-10 {
+  padding-top: 10px;
 }
 
 .unchecked, .checked {
@@ -312,18 +287,11 @@ fieldset {
   display: inline-block;
 }
 
-.pop-cards {
-  max-height: 580px;
-}
-
-.bottom-align {
+.stars-align {
   margin-top: auto;
 }
 
 /******************* ACTIVITE ************************/
-#activite {
-  margin: 40px;
-}
 
 .title-activite {
   padding: 40px 0px 0px 40px;
@@ -333,11 +301,6 @@ fieldset {
 .activite-cards {
   width: fit-content;
   background-color: white;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
 }
 
 .acti-block {
@@ -345,8 +308,7 @@ fieldset {
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
-  height: 580px;
-
+  height: 490px;
 }
 
 .activite-card {
@@ -355,14 +317,14 @@ fieldset {
   text-decoration: none;
 }
 
-.img-card-acti {
+.activite-card img {
   width: 100%;
   height: calc(100% - 40px);
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
-.card-desc-acti {
+.acti-card-desc {
   box-sizing: border-box;
   padding: 10px 0px 0px 20px;
 }
@@ -384,8 +346,6 @@ fieldset {
 
 footer {
   background-color: #F2F2F2;
-  display: flex;
-  flex-flow: wrap;
   align-content:stretch;
   gap: 15%;
   padding: 40px;
