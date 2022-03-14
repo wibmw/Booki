@@ -2,6 +2,7 @@ body {
     background-color: white;
     font-family: Raleway;
     max-width: 1450px;
+    min-width: 450px;
     margin: auto;
 }
 
@@ -186,7 +187,9 @@ body {
 }
 
 /******************* HEBERGEMENT ************************/
-
+#hebergement {
+  /* width: fit-content; */
+}
 .cards-template {
   margin-right: 40px;
   border-radius: 20px;
@@ -261,6 +264,7 @@ body {
   font-size: 16px;
   font-weight:bolder;
   text-decoration: none;
+  color: black;
 }
 
 .pad-t-10 {
@@ -300,7 +304,7 @@ body {
 }
 
 .activite-cards {
-  width: fit-content;
+  width: 100%;
   background-color: white;
 }
 
@@ -308,7 +312,7 @@ body {
   width: auto;
   display: flex;
   flex-flow: column wrap;
-  align-content: space-between;
+  /* align-content: space-between; */
   height: 490px;
 }
 
@@ -342,6 +346,23 @@ body {
   height: 165px;
 }
 
+@media screen and (width: 1024px) {
+  .activite-card {
+    width: 40%;
+    margin: 0 20px 20px 0;
+  }
+  .activite-card img {
+    height: calc(100% - 50px);
+  }
+  .acti-card-desc {
+    box-sizing: border-box;
+    padding: 0px 0px 0px 20px;
+  }
+  .big-card {
+    height: 425px;
+  }
+}
+
 
 /******************* FOOTER ************************/
 
@@ -350,7 +371,7 @@ footer {
   align-content:stretch;
   gap: 15%;
   padding: 40px;
-  width:auto;
+  width: 1;
 }
 
 .footer-list {
@@ -366,4 +387,5 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
+  color: black;
 }
